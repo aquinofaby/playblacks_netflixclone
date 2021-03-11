@@ -1,0 +1,161 @@
+/* importei uma fonte mais parecida com o netflix */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*criar uma variavel pra cor padrão do seu arquivo na raiz*/
+:root {
+    --orange:#FF6E30;
+    --caramel: #260C10; 
+}
+/* resetar configurações de margem da pag */
+*{ 
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box; 
+        
+}
+
+/*Configurações do cabeçalho da pagina*/
+header {
+    position:fixed;
+    z-index:999;
+    left:0%;
+    right: 0%;
+    top:0;
+    overflow:hidden;     
+}
+
+/*Configurações da barra inicial de menus*/
+.barrainicial {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--caramel);
+    flex-direction: row;
+    align-items: center;
+}
+
+/*cores dos menus da barra de navegação*/
+nav a { 
+    
+    text-decoration: none;
+    color: rgb(214, 187, 124);
+    margin-right: 15px;
+    font-size: 20px;  
+}
+
+/* hover aplica um estilo diferente quando passar o mouse */
+nav a:hover{ 
+    color: #ffff; /* neste caso muda a cor do item ao passar o mouse */
+}
+
+
+/*elemendo base do conteudoda pagina */
+body {
+    background: var(--caramel);
+    font-family: 'Bebas Neue', cursive;    color:whitesmoke;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* ajustando o logo da pagina */
+.logo{
+    margin-left: 5px;
+    color: var(--orange);
+    font-size: 50px;
+    font-weight: 1000; /*mudando a espessura/margem da letra de titulo*/
+}
+
+
+/*ajustando o filme de capa principal*/
+.filme-principal {
+    font-size:16px;
+    /*o linear gradiente faz uma fina camada neste caso de preto pra dar contraste a escrita precisa sempre incluir duas cores*/
+    
+    /*capado filme princpical*/
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/MadamCJWalker.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size:cover; /* faz com que a imagem pegue a area de cobertura do box*/
+    display: flex;
+    flex-direction:initial;/*deixa um abaixo do outro*/
+    align-items: flex-start; /*começa sempre da esquerda, alinha a esquerda*/
+    margin-bottom: 4px; /*criei uma margem entre o box do filme principal e o carousel*/
+}
+
+/* ajustando a margem esquerda do titulo principal*/
+.titulo-descricao{
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+
+/* ajustando descrição do filme principal*/
+.filme-principal .descricao {
+    margin-top:15px;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ajustando a configuração do titulo do filme principal*/
+.filme-principal .tituloprincipal{
+    margin-top: 15%; /*trabalhar com % pensando em posicionamento fluido*/
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-align:left;    
+}
+
+/* ajustando os botoes do filme principal*/
+.filme-principal .botao{
+    background-color:#ED925C;
+    border: none;
+    color:#3D000E;
+    padding: 10px; /* quando passa so um valor muda os 4 lados assim no sentido horario*/
+    margin-right: 1px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    cursor: pointer; /* muda o ponteiro ao passar no botão p/ "mãozinha" onde que deve clicar */
+    transition: .3s ease all; /*cuida da transição entre uma animação e outra nesse caso suavisa a mudança*/
+}
+
+/* ajustando a transição de cores do botão*/
+.botao:hover{
+    background-color:#F7C2C1;
+    color:#702B16;
+}
+
+/* ajustando as donfiguraçoes dos titulos de cada sesão*/
+.titulo-sessao{
+    font-size: 25px;
+    color: rgb(214, 187, 124);
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* ajustando os tamanho dos itens de cada sesão*/
+.box-filmes {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.box-series {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.box-cantoras {
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 10%; /*coloquei bordar mais arredondadas*/
+}
+
+.box-playlist{
+    height: 200px;
+    width: 100px;
+    display: block;
+    border-radius: 50%;/*transformando em circulo*/
+}    
+    
+
+

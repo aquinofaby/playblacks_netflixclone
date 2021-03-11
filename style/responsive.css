@@ -1,0 +1,28 @@
+@media screen and (max-widht:500px){
+    .barrainicial {
+        flex-direction:column;
+        display:flex;
+    }
+    
+       .botao{
+        margin-top: 5px;
+        width: 300px;
+        
+    }
+
+    .filme-principal{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+    }
+}
+
+
+@media screen and (min-widht:1000px){
+    .filme-principal{
+        width: 300px;
+        display: flex;
+    }
+
+
+}
